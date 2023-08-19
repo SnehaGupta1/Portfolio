@@ -47,8 +47,12 @@ body{
     background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
     padding: 30px 0px 10px 0px;
 }
+.home .row{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
 .home h2{
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: 4rem;
 }
 .c-orange{
@@ -58,13 +62,13 @@ body{
 }
 .home p{
     width: fit-content;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1.2rem;
 }
 .h-btn:hover{
     background: #6f34fe;
     color: #fff;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     transition-duration: 1s;
 }
 .link{
@@ -93,6 +97,7 @@ body{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 /* adding animation to home section image  */
 .home img{
     animation: floatimg 4s ease-in-out infinite;
@@ -128,59 +133,18 @@ body{
      60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
   }
-  
-  .home-about-social-links, .social-icons{
-    display: inline-block;
-    position: relative;
-  }
-  
-  .home-about-social-links .social-icons{
-    -webkit-padding-start: 0;
-    padding-top: 15px;
-    padding-inline-start: 0;
-
-  }
-
- .home-about-social-links .social-icons{
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-.home-about-social-links{
-var(--clr-txt)!important;
-padding-top: 25px;
-text-align: center!important;
-}
-.row{
---bs-gutter-x: 1.5rem;
---bs-gutter-y: 0;
-display: flex;
-flex-wrap: wrap;
-margin-left: calc(var(--bs-gutter-x)*-.5);
-margin-right: calc(var(--bs-gutter-x)*-.5);
-margin-top: calc(var(--bs-gutter-y)*-1);
-}
-
-
-
-  /* For demonstration purposes only: */
-  /* body { font-size: 3.5em }
-  h1 { font-size: 0.5em } */
 
 /* about section starts */
 .about {
     /* background: rgb(255, 255, 255); */
-    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 80%);
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
   }
   .about .row {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap: wrap;
-    padding: 4rem;
+    padding: 2rem;
   }
   .about .row .image {
     text-align: center;
@@ -234,11 +198,11 @@ margin-top: calc(var(--bs-gutter-y)*-1);
     color: #011aff;
   }
   .resumebtn {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   .resumebtn .btn {
-    padding: 1.7rem 3rem;
-    border-radius: 0.5em;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
     transition: 0.3s;
     color: #fff;
     background: #2506ad;
@@ -406,28 +370,22 @@ footer .link-group a:hover{
     background-color: #fff;
     padding: 14px 15px 10px 15px;
 }
-.social-links .dribble{
-    color: #f33a7e;
+.social-links .github{
+    color: #0c0c0c;
 }
 .social-links button:hover{
     color: #fff;
     transform: translateY(-20px);
     transition-duration: 1s;
 }
-.social-links .dribble:hover{
-    background-color: #f33a7e;
+.social-links .github:hover{
+    background-color: #0c0c0c;
 }
-.social-links .whatsapp{
-    color: #25D366;
+.social-links .linkedin{
+    color: #496ed3;
 }
-.social-links .whatsapp:hover{
-    background-color: #25D366;
-}
-.social-links .behance{
-    color: #255afc;
-}
-.social-links .behance:hover{
-    background-color: #255afc;
+.social-links .linkedin:hover{
+    background-color: #496ed3;
 }
 
 /* styling back to top button */
